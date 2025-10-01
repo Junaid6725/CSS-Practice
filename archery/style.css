@@ -1,0 +1,35 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.container,
+.ring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.ring {
+  border-radius: 10rem;
+}
+.ring-1 {
+  height: 12.5rem;
+  width: 12.5rem;
+  background: black;
+}
+.ring-2 {
+  height: 9.375rem;
+  width: 9.375rem;
+  background: blue;
+}
+.ring-3 {
+  height: 6.25rem;
+  width: 6.25rem;
+  background: red;
+}
+.bullseye {
+  height: 3.125rem;
+  width: 3.125rem;
+  background: yellow;
+}
