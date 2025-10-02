@@ -1,0 +1,53 @@
+/* :root {
+  --color-light: lightgrey;
+  --color-dark: darkgrey;
+} */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+.circle {
+  height: 6rem;
+  width: 6rem;
+  background: #000;
+  border-radius: 3rem;
+  animation: pulse infinite 2s;
+}
+@keyframes pulse {
+  14% {
+    background: linear-gradient(rgb(255, 7, 7), rgb(139, 0, 0));
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.5);
+  }
+  28% {
+    background: linear-gradient(rgb(255, 165, 0), rgb(255, 140, 0));
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+  }
+  42% {
+    background: linear-gradient(rgb(255, 255, 0), rgb(204, 204, 0));
+    box-shadow: 0 0 20px rgba(204, 204, 0, 0.5);
+  }
+  56% {
+    background: linear-gradient(rgb(0, 255, 0), rgb(0, 128, 0));
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
+  }
+  72% {
+    background: linear-gradient(rgb(0, 0, 255), rgb(0, 0, 139));
+    box-shadow: 0 0 20px rgba(0, 0, 139, 0.5);
+  }
+  84% {
+    background: linear-gradient(rgb(75, 0, 130), rgb(50, 0, 100));
+    box-shadow: 0 0 20px rgba(50, 0, 100, 0.5);
+  }
+  100% {
+    background: linear-gradient(rgb(238, 130, 238), rgb(148, 0, 211));
+    box-shadow: 0 0 20px rgba(148, 0, 211, 0.5);
+  }
+}
