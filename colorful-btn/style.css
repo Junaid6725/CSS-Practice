@@ -1,0 +1,72 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--body-bg);
+  font-family: var(--font-family);
+}
+:root {
+  --font-family: "Karla", sans-serif;
+  --body-bg: #1e1f25;
+  --btn-bg: #000;
+  --btn-color: #cbcbcb;
+  --btn-hover-color: #fff;
+  --grad-col-1: #eeaf61;
+  --grad-col-2: #fb9862;
+  --grad-col-3: #ee5d6c;
+  --grad-col-4: #ce4993;
+  --grad-col-5: #6a0d83;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+.border-btn {
+  background: linear-gradient(
+    125deg,
+    var(--grad-col-1),
+    var(--grad-col-2),
+    var(--grad-col-3),
+    var(--grad-col-4),
+    var(--grad-col-5)
+  );
+  padding: 2px;
+}
+.btn {
+  background-color: var(--btn-bg);
+  font-family: inherit;
+  color: var(--btn-color);
+  border: none;
+  padding: 1em 1.5em;
+  letter-spacing: 0.1em;
+  /* border-image: linear-gradient(
+    115deg,
+    var(--grad-col-1),
+    var(--grad-col-2),
+    var(--grad-col-3),
+    var(--grad-col-4),
+    var(--grad-col-5)
+  );
+  border-image-slice: 1; */
+  /* background: transparent; */
+}
+.btn:hover {
+  cursor: pointer;
+}
+.border-btn:hover {
+  background: linear-gradient(
+    230deg,
+    var(--grad-col-2),
+    var(--grad-col-3),
+    var(--grad-col-1),
+    var(--grad-col-5),
+    var(--grad-col-4)
+  );
+}
+.border-btn:hover .btn {
+  color: var(--btn-hover-color);
+  padding: 1.1em;
+}
