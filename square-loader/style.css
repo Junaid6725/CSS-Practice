@@ -1,0 +1,41 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 3rem;
+}
+.box {
+  background: black;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  animation: rotate infinite 0.9s;
+  transform: rotate(45deg);
+}
+.red {
+  background: rgb(255, 8, 8);
+  box-shadow: 0 0.25rem 0.625rem rgba(255, 0, 0, 0.5);
+}
+.green {
+  background: rgb(9, 255, 9);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 128, 0, 0.5);
+}
+.blue {
+  background: blue;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 255, 0.5);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
