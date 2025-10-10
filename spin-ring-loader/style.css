@@ -1,0 +1,47 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --spinner: #f3f3f3;
+  --spinner-active: purple;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loader {
+  width: 8.25rem;
+  height: 8.25rem;
+  border: 1rem solid var(--spinner);
+  border-radius: 50%;
+  border-bottom: 1rem solid var(--spinner-active);
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  14% {
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.5);
+  }
+  28% {
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+  }
+  42% {
+    box-shadow: 0 0 20px rgba(204, 204, 0, 0.5);
+  }
+  56% {
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
+  }
+  72% {
+    box-shadow: 0 0 20px rgba(0, 0, 139, 0.5);
+  }
+  84% {
+    box-shadow: 0 0 20px rgba(50, 0, 100, 0.5);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 20px rgba(148, 0, 211, 0.5);
+  }
+}
