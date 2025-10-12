@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 0.5rem;
+  text-align: center;
+}
+nav {
+  border: 2px solid #000;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  font-size: 3rem;
+  border-radius: 2rem;
+  line-height: 5rem;
+}
+ul {
+  list-style-type: none;
+  color: black;
+}
+li {
+  color: black;
+  border-top: 1px solid #333;
+}
+h1 {
+  background-color: gold;
+  border-radius: 2rem 2rem 0 0;
+}
+li a,
+li a:visited {
+  text-decoration: none;
+  color: #333;
+}
+li a:hover,
+li a:focus {
+  display: block;
+  background-color: #000;
+  color: whitesmoke;
+}
+li:last-child a {
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+footer {
+  font-size: 2rem;
+}
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+footer a:hover {
+  color: black;
+  text-decoration: underline;
+}
