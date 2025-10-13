@@ -1,0 +1,116 @@
+body {
+  background-color: black;
+}
+.box1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 800px;
+  background-color: blue;
+  animation: myfirst 2s linear 1s infinite forwards;
+  position: absolute;
+}
+@keyframes myfirst {
+  0% {
+    background-color: blue;
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    background-color: magenta;
+    top: 50px;
+    left: 50px;
+  }
+  50% {
+    background-color: violet;
+    top: 300px;
+    left: 300px;
+  }
+  75% {
+    background-color: pink;
+    top: 0px;
+    left: 300px;
+  }
+  100% {
+    background-color: purple;
+    top: 50px;
+    left: 50px;
+  }
+}
+.box2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  margin-left: 500px;
+  background-color: yellow;
+  animation: mysec 2s linear 1s infinite forwards;
+  position: absolute;
+}
+@keyframes mysec {
+  0% {
+    background-color: yellowgreen;
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    background-color: lightgreen;
+    top: 50px;
+    left: 50px;
+  }
+  50% {
+    background-color: lightyellow;
+    top: 300px;
+    left: 100px;
+  }
+  75% {
+    background-color: lime;
+    top: 0px;
+    left: 200px;
+  }
+  100% {
+    background-color: limegreen;
+    top: 50px;
+    left: 50px;
+  }
+}
+.box3 {
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  margin-left: 700px;
+  background-color: purple;
+  animation: mythird 2s linear 1s infinite forwards;
+  position: absolute;
+}
+@keyframes mythird {
+  0% {
+    background-color: indigo;
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    background-color: pink;
+    top: 50px;
+    left: 50px;
+  }
+  50% {
+    background-color: fuchsia;
+    top: 300px;
+    left: 100px;
+  }
+  60% {
+    background-color: red;
+    top: 0px;
+    left: 500px;
+    bottom: 500px;
+  }
+  90% {
+    background-color: violet;
+    top: 0px;
+    left: 150px;
+  }
+  100% {
+    background-color: purple;
+    top: 50px;
+    left: 50px;
+  }
+}
