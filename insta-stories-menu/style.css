@@ -1,0 +1,76 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-main);
+  color: var(--font-color);
+}
+:root {
+  --font-color: #fff;
+  --grad-1: #feda75;
+  --grad-2: #fa7e1e;
+  --grad-3: #d62976;
+  --grad-4: #962fbf;
+  --grad-5: #4f5bd5;
+  --viewed: grey;
+  --bg-main: #000;
+  --bg-live: red;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.stories-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+}
+.story {
+  position: relative;
+}
+
+.img-wrapper {
+  width: 4.75rem;
+  height: 4.75rem;
+  padding: 0.25rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.img {
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  border: 0.125rem solid #000;
+}
+.new > .img-wrapper {
+  background: linear-gradient(
+    to top right,
+    var(--grad-1),
+    var(--grad-2),
+    var(--grad-3),
+    var(--grad-4),
+    var(--grad-5)
+  );
+}
+.viewed > .img-wrapper {
+  background: var(--viewed);
+}
+.live::after {
+  content: "LIVE";
+  font-size: 1rem;
+  font-weight: bold;
+  background: var(--bg-live);
+  border: 0.125rem solid black;
+  border-radius: 0.125rem;
+  padding: 0.125rem 0.25rem;
+  position: absolute;
+  top: 3.7rem; /* just below the image */
+  left: 50%;
+  transform: translateX(-50%);
+}
