@@ -1,0 +1,65 @@
+body {
+  background-image: url("./img/main-bg.jpg");
+}
+.polaroid-gallery {
+  text-align: center;
+  margin-top: 2rem;
+}
+.gallery-title {
+  font-size: 2rem;
+  font-family: Helvetica, sans-serif, Arial;
+  font-weight: 600;
+  color: #333;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  text-align: center;
+}
+.section-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: Helvetica, sans-serif, Arial;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.polaroid-card {
+  display: inline-block;
+  background-color: #eee6d8;
+  padding: 0.6rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem -0.2rem rgba(0, 0, 0, 0.7);
+}
+.card-img {
+  width: 14rem;
+  height: 14rem;
+}
+.card-text {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 0.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+.polaroid-card:nth-of-type(even) {
+  transform: rotate(12deg);
+}
+.polaroid-card:nth-of-type(odd) {
+  transform: rotate(-12deg);
+}
+.polaroid-card:nth-of-type(even)::before {
+  content: " ";
+  display: block;
+  background-color: rgba(222, 220, 200, 0.66);
+  width: 6.6rem;
+  height: 1.8rem;
+  transform: rotate(-30deg) translate(-2rem, -1.5rem);
+}
+.polaroid-card:nth-of-type(odd)::before {
+  content: " ";
+  display: block;
+  background-color: rgba(222, 220, 200, 0.66);
+  width: 6.6rem;
+  height: 1.8rem;
+  transform: translate(10rem, -0.6rem) rotate(25deg);
+}
+.polaroid-card:hover {
+  transform: scale(1.4);
+}
