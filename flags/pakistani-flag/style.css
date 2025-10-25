@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --height: 12.5rem;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+.pakistan-flag {
+  height: var(--height);
+  width: calc(var(--height) * 8 / 5);
+  background: #fff;
+  display: flex;
+}
+.white {
+  background: #fff;
+  width: calc(62.5rem * 1 / 4);
+}
+.green {
+  background: #00401a;
+  width: calc(62.5rem * 3 / 4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cresent-icon {
+  color: white;
+  font-size: 6rem;
+}
