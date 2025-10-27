@@ -1,0 +1,26 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+}
+.stripe {
+  /* flex-grow: 1; */
+  height: 10rem;
+  width: calc(9.375rem * 2 / 3);
+}
+.red {
+  background: #ed2938;
+}
+.white {
+  background: #fff;
+}
+.blue {
+  background: #002495;
+}
