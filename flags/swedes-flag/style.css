@@ -1,0 +1,35 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --height: 12.5rem;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swedes-flag {
+  background: #0269a4;
+  height: var(--height);
+  width: calc(var(--height) * 8 / 5);
+  display: flex;
+  position: relative;
+}
+.yellow-stripe {
+  background: #fecc00;
+  height: calc(var(--height) * 1 / 5);
+}
+.stripe {
+  align-self: center;
+  width: 100%;
+}
+.stripe2 {
+  width: var(--height);
+  position: absolute;
+  transform: rotate(90deg);
+  top: calc(var(--height) * 4 / 10);
+}
