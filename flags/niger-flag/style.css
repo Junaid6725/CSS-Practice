@@ -1,0 +1,42 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --height: 12.5rem;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+.niger-flag {
+  height: var(--height);
+  width: calc(var(--height) * 7 / 6);
+  background: white;
+  display: grid;
+}
+.orange {
+  background: #e15307;
+}
+.white {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.green {
+  background: #10af2f;
+}
+.circle {
+  background: #e15307;
+  height: calc(var(--height) / 3 * 0.85);
+  width: calc(var(--height) / 3 * 0.85);
+  border-radius: 5rem;
+  position: absolute;
+  justify-content: center;
+}
