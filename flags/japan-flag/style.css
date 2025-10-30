@@ -1,0 +1,29 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+:root {
+  --height: 12.5rem;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.japan-flag {
+  width: calc(var(--height) * 3 / 2);
+  height: var(--height);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red-round {
+  border-radius: 5rem;
+  background: #bc022c;
+  width: calc(var(--height) * 1 / 2);
+  height: calc(var(--height) * 1 / 2);
+}
