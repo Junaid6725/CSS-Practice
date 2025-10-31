@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.stripe {
+  display: grid;
+  height: 12.5rem;
+  width: calc(12.5rem * 5 / 3);
+}
+.black {
+  background: #000000;
+}
+.red {
+  background: #de0002;
+}
+.yellow {
+  background: #ffce00;
+}
