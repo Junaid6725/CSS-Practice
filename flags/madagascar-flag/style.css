@@ -1,0 +1,35 @@
+:root {
+  --container-height: 100vh;
+  --height: 13rem;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: var(--container-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+.flag {
+  height: var(--height);
+  width: calc(var(--height) * 3 / 2);
+  display: flex;
+}
+.white {
+  background: #ffffff;
+  width: calc(var(--height) / 2);
+}
+.red {
+  background: #fc3e32;
+  height: calc(var(--height) / 2);
+  width: var(--height);
+}
+.green {
+  background: #007e39;
+  height: calc(var(--height) / 2);
+  width: var(--height);
+}
